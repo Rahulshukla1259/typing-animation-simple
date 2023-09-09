@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="type">hello from the rahul</div>
+</body>
+
+<style>
+
+    .type{
+
+        letter-spacing: 2px;
+
+        font-size: larger;
+    }
+
+   .type::after{
+
+    content: "";
+    
+   position: absolute;
+    width:180px;
+    border-left: 2px solid black;
+    height: 20px;
+    background-color: white;
+
+    
+
+    animation: anime 5s   steps(23) infinite ;
+    
+   }
+
+   @keyframes anime{
+
+     0% { margin-left: -180px;} 
+     
+     /* 100%{width: 100px;} */
+   }
+</style>
+</html>
